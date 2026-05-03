@@ -1,0 +1,71 @@
+/* Right-to-Left (RTL) Text Alignment for Hebrew Content */
+
+/* Set RTL direction on the root element — it cascades naturally */
+html[lang="he"] {
+  direction: rtl;
+}
+
+/* Right-align text content elements only */
+[lang="he"] p,
+[lang="he"] span,
+[lang="he"] h1,
+[lang="he"] h2,
+[lang="he"] h3,
+[lang="he"] h4,
+[lang="he"] h5,
+[lang="he"] h6,
+[lang="he"] li,
+[lang="he"] td,
+[lang="he"] th,
+[lang="he"] label,
+[lang="he"] figcaption {
+  text-align: right;
+}
+
+/* Hebrew blockquotes — flip the border to right side */
+[lang="he"] blockquote {
+  text-align: right;
+  border-right: 4px solid #667eea;
+  border-left: none;
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* Prevent RTL from breaking flexbox/grid layout containers */
+[lang="he"] #main-wrapper,
+[lang="he"] #sidebar,
+[lang="he"] .container,
+[lang="he"] .row,
+[lang="he"] .col,
+[lang="he"] [class*="col-"],
+[lang="he"] .d-flex,
+[lang="he"] .panel-wrapper,
+[lang="he"] #panel-wrapper {
+  direction: ltr;
+}
+
+/* Re-apply RTL to the actual content areas inside layout containers */
+[lang="he"] #main-wrapper .content,
+[lang="he"] .post-content,
+[lang="he"] .page-content,
+[lang="he"] .archive-content,
+[lang="he"] .categories-content,
+[lang="he"] #sidebar .site-title,
+[lang="he"] #sidebar .site-subtitle {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Sidebar nav: keep flex layout LTR (icon then text) but right-align text */
+[lang="he"] #sidebar .nav-link {
+  direction: ltr;
+}
+
+/* Archives timeline: keep LTR so float:left and left:Npx positions work */
+[lang="he"] #archives {
+  direction: ltr;
+}
+
+[lang="he"] #archives a {
+  direction: rtl;
+}

@@ -35,6 +35,13 @@ hugo mod get -u github.com/geekifan/hugo-theme-chirpy
 hugo mod tidy
 ```
 
+## run the server
+
+```bash
+hugo server
+```
+
+
 ## Credits
 
 This README is modified from [hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter).

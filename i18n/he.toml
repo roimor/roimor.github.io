@@ -1,0 +1,26 @@
+# Hebrew translations for hugo-theme-chirpy
+
+[layout]
+  post = "פוסט"
+  category = "קטגוריה"
+  tag = "תגית"
+
+[tabs]
+  home = "בית"
+  categories = "קטגוריות"
+  tags = "תגיות"
+  archives = "ארכיון"
+  about = "אודות"
+
+[search]
+  hint = "...חיפוש"
+  cancel = "ביטול"
+  no_results = "לא נמצאו תוצאות."
+
+[panel]
+  lastmod = "עוד פוסטים"
+  trending_tags = "תגיות"
+  toc = "תוכן עניינים"
+
+[post]
+  posted = "פורסם"
