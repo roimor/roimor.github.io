@@ -11,7 +11,6 @@ tags:
   - Philosophy
 image:
   path: zen-stones.jpg
-lang: "he"
 ---
 
 זה לא אנושי לא להתחרט על חלוף החיים.

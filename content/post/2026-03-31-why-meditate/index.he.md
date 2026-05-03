@@ -5,7 +5,5 @@ draft: false
 description: ""
 categories: []
 tags: []
-lang: "he"
-
 ---
 
