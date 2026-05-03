@@ -1,0 +1,295 @@
+/* Custom Styles */
+
+/* Import Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Light mode background color - comprehensive targeting */
+:root[data-mode="light"],
+[data-mode="light"],
+html[data-mode="light"],
+body[data-mode="light"] {
+  --bs-body-bg: #fbfbf2 !important;
+  background-color: #fbfbf2 !important;
+}
+
+body[data-mode="light"] #main-wrapper,
+body[data-mode="light"] #sidebar,
+body[data-mode="light"] .content-wrapper,
+body[data-mode="light"] .main-wrapper,
+body[data-mode="light"] #topbar-wrapper,
+body[data-mode="light"] #sidebar-wrapper,
+body[data-mode="light"] .panel,
+body[data-mode="light"] .content,
+body[data-mode="light"] article,
+body[data-mode="light"] .post-content {
+  background-color: #fbfbf2 !important;
+}
+
+/* Also target when light mode class is on html */
+html[data-mode="light"] body,
+html[data-mode="light"] #main-wrapper,
+html[data-mode="light"] #sidebar,
+html[data-mode="light"] .content-wrapper {
+  background-color: #fbfbf2 !important;
+}
+
+/* Set Open Sans for Hebrew - exclude images, icons, and image buttons */
+[lang="he"],
+html[lang="he"] {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+[lang="he"] p,
+[lang="he"] h1, [lang="he"] h2, [lang="he"] h3, [lang="he"] h4, [lang="he"] h5, [lang="he"] h6,
+[lang="he"] span:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not([class*="icon"]),
+[lang="he"] div:not([class*="icon"]):not([class*="image"]),
+[lang="he"] a:not([class*="icon"]):not([class*="image"]),
+[lang="he"] li,
+[lang="he"] td,
+[lang="he"] th,
+[lang="he"] button:not([class*="icon"]):not([style*="background-image"]),
+[lang="he"] .btn:not([class*="icon"]):not([style*="background-image"]) {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Set Open Sans for English - exclude images, icons, and image buttons */
+[lang="en"],
+html[lang="en"] {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+[lang="en"] p,
+[lang="en"] h1, [lang="en"] h2, [lang="en"] h3, [lang="en"] h4, [lang="en"] h5, [lang="en"] h6,
+[lang="en"] span:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not([class*="icon"]),
+[lang="en"] div:not([class*="icon"]):not([class*="image"]),
+[lang="en"] a:not([class*="icon"]):not([class*="image"]),
+[lang="en"] li,
+[lang="en"] td,
+[lang="en"] th,
+[lang="en"] button:not([class*="icon"]):not([style*="background-image"]),
+[lang="en"] .btn:not([class*="icon"]):not([style*="background-image"]) {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Button styles with creative use of #dda15e and #606c38 */
+/* Exclude image buttons and icon-only buttons */
+.btn:not([style*="background-image"]):not([class*="icon"]):not(img),
+button:not([style*="background-image"]):not([class*="icon"]):not(img),
+.post-tag:not([style*="background-image"]):not(img),
+a.post-tag:not([style*="background-image"]):not(img) {
+  font-family: 'Open Sans', sans-serif !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Ensure image buttons and icon buttons are not affected */
+.btn img,
+button img,
+.btn[style*="background-image"],
+button[style*="background-image"] {
+  font-family: inherit !important;
+}
+
+/* Primary buttons - use #dda15e as background, #606c38 as text */
+.btn-primary,
+.btn-outline-primary:hover,
+.post-tag.btn-outline-primary:hover,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #dda15e !important;
+  border-color: #dda15e !important;
+  color: #606c38 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 4px rgba(221, 161, 94, 0.3) !important;
+}
+
+/* Outline buttons - use #606c38 as border and text, #dda15e on hover */
+.btn-outline-primary,
+.post-tag.btn-outline-primary {
+  border-color: #606c38 !important;
+  color: #606c38 !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+}
+
+.btn-outline-primary:hover,
+.post-tag.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.post-tag.btn-outline-primary:focus {
+  background-color: #dda15e !important;
+  border-color: #dda15e !important;
+  color: #606c38 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 6px rgba(221, 161, 94, 0.4) !important;
+}
+
+/* Navigation buttons and links */
+.nav-link,
+.nav-link:hover {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Sidebar buttons */
+#sidebar .btn,
+#sidebar button,
+#sidebar .nav-link {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Form buttons */
+input[type="submit"],
+input[type="button"],
+button[type="submit"],
+button[type="button"] {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Additional button variations for creativity */
+.btn-secondary,
+.btn-secondary:focus {
+  background-color: #606c38 !important;
+  border-color: #606c38 !important;
+  color: #fbfbf2 !important;
+  font-weight: 500 !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: #dda15e !important;
+  border-color: #dda15e !important;
+  color: #606c38 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 6px rgba(221, 161, 94, 0.4) !important;
+}
+
+/* Creative styling for tag buttons - alternating colors */
+.post-tag.btn-outline-primary:nth-child(odd) {
+  border-color: #606c38 !important;
+  color: #606c38 !important;
+}
+
+.post-tag.btn-outline-primary:nth-child(even) {
+  border-color: #dda15e !important;
+  color: #dda15e !important;
+}
+
+.post-tag.btn-outline-primary:nth-child(odd):hover {
+  background-color: #dda15e !important;
+  border-color: #dda15e !important;
+  color: #606c38 !important;
+}
+
+.post-tag.btn-outline-primary:nth-child(even):hover {
+  background-color: #606c38 !important;
+  border-color: #606c38 !important;
+  color: #fbfbf2 !important;
+}
+
+/* Ensure all text content uses Open Sans - but exclude icons and images */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+p,
+h1, h2, h3, h4, h5, h6,
+span:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not([class*="icon"]),
+div:not([class*="icon"]):not([class*="image"]):not([style*="background-image"]),
+a:not([class*="icon"]):not([class*="image"]):not(img),
+li:not([class*="icon"]),
+td:not([class*="icon"]),
+th:not([class*="icon"]) {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Preserve icon fonts */
+.fa, .fas, .far, .fab, .fal,
+[class*="icon"],
+[class*="fa-"],
+i[class*="fa"] {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 6 Pro" !important;
+}
+
+/* Exclude images and image containers from font changes */
+img,
+[style*="background-image"],
+[class*="image"],
+picture,
+svg:not([class*="text"]) {
+  font-family: inherit !important;
+}
+
+/* Ensure buttons with images work correctly */
+.btn img,
+button img,
+a img {
+  display: block !important;
+  font-family: inherit !important;
+}
+
+/* Full-width hero image above grid */
+.image-grid-hero {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.image-grid-hero img {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-grid-hero strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.image-grid-hero span {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.3;
+}
+
+/* Image grid layout for post images — masonry-style columns */
+.image-grid {
+  column-count: 2;
+  column-gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.image-grid-item {
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.image-grid-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
+
+.image-grid-item strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.image-grid-item span {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  line-height: 1.3;
+}
+
+/* RTL grid alignment */
+[lang="he"] .image-grid-item {
+  align-items: flex-end;
+  text-align: right;
+}
+
